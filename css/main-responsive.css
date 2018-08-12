@@ -1,0 +1,36 @@
+
+@media screen and (min-width: 450px) {
+  #map {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #restaurants-list li {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  #restaurants-list li {
+    width: 30%;
+  }  
+}
+
+@media screen and (min-width: 900px) {
+  #maincontent {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

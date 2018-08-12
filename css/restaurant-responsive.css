@@ -1,0 +1,31 @@
+
+@media screen and (min-width: 700px) {
+  .inside #map-container {
+    width: 50%;
+  }
+  .inside #restaurant-container {
+    width: 50%;
+  }
+  .inside #map {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  /* add wide auto margins */
+  #maincontent {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
