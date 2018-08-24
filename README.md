@@ -22,4 +22,17 @@ Storing the google maps api key in an env var.
   Accessing your new env var in the code.
   `process.env(NEW_VAR)`
 
+This project has a separate JSON server, to simulate fetching data from an external API.  
+It is a SailsJS server.  
+To start the SailsJS server, do the following...  
+
+In a new terminal  
+`$ cd jsonServer`  
+`$ npm install`  
+`$ npm run start`  to start the server.  
+
+Verify it is running by navigating to **http://localhost:1337/restaurants** in your browser, and geting the restaurants JSON.  
+Further information about the jsonServer is available in the README.md inside the folder.  
+
+
 

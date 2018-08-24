@@ -1,8 +1,8 @@
 class DBHelper {
   static fetchRestaurants(callback) {
-    fetch('http://localhost:10000/data/restaurants.json')
+    fetch('http://localhost:1337/restaurants')
       .then(res => res.json())
-      .then(json => callback(null, json.restaurants))
+      .then(json => callback(null, json))
       .catch(err => {
         console.error(`Problem fetching restaurants from DB: ${err.message}`)
         callback(err, null)
