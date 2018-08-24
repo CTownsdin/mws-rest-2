@@ -2,10 +2,6 @@ let restaurant
 let map
 
 /////////////////////////////////////TODO: Export from utils.js/////////
-/**
-* Given an image, return alt text for that image.
-* Includes mapping of alt texts to images.
-*/
 getImageAltText = image => {
   const altTexts = {
     '1.jpg': 'bustling dining room with chandeliers',
@@ -22,19 +18,12 @@ getImageAltText = image => {
   return altTexts[image.src.split('/').pop()]
 }
 
-/*
-* Given an image, return a srcset for it.
-* like: srcset="/img/1-500px.jpg 500w, /img/1-1000px.jpg 1000w, /img/1-1500px.jpg 1500w"
-*/
 getImageSourceSet = image => {
   const src = image.src.split('.')[0]
   return `${src}-500px.jpg 500w, ${src}-1000px.jpg 1000w, ${src}-1500px.jpg 1500w`
 }
 /////////////////////////////////////////////////////////////////////////
 
-/**
- * Initialize Google map, called from HTML.
- */
 window.initMap = () => {
   fetchRestaurantFromURL((error, restaurant) => {
     if (error) {
